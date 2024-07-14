@@ -9,10 +9,6 @@ const Game = () => {
   const { score, setScore } = useContext(DicesContext);
   const [selectBtn, setSelectBtn] = useState(0);
 
-  useEffect(() => {
-    console.log(selectBtn);
-  });
-
   return (
     <section id="game">
       <div id="gameContainer">

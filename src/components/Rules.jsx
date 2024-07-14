@@ -9,11 +9,10 @@ const Rules = () => {
         1. Select any Number <br />
         2. Click on dice image <br />
         3. After click on dice if selected number is equal to dice number you
-        will <br />
-        4. Get same point as dice <br />
-        5. If you get wrong guess then 2 point will be deducted <br />
-        6. If you get 20 you win or if you touches -20 you lose <br />
-        7. You will get 10 changes to reach 50
+        will get same point as dice <br />
+        4. If you get wrong guess then 2 point will be deducted <br />
+        5. If you get 20 you win or if you touches -20 you lose <br />
+        6. You will get 10 changes to reach 50
       </p>
     </div>
   );

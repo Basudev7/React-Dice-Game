@@ -17,22 +17,24 @@ body {
   align-items: center;
   margin-right: 20px; /* Add some space between the image and text */
 }
+#home .diceImg img {
+  width: 100%;
+}
 
 #home .playNow {
-  text-align: right;
   display: flex;
   flex-direction: column; /* Stack vertically */
-  align-items: center; /* Center horizontally */
+  /* align-items: baseline; Center horizontally */
 }
 
 #home .playNow h1 {
   font-weight: 650;
-  font-size: 96px;
-  margin: 0; /* Remove default margin */
+  font-size: 6rem;
+  /* margin: 10px; Remove default margin */
 }
 
 #home .playNow button {
-  width: 220px;
+  width: 50%;
   height: 44px;
   border-radius: 5px;
   padding: 10px 18px; /* Correct padding syntax */
@@ -74,10 +76,6 @@ body {
   text-align: center;
 }
 
-/* #mainGame p {
-  font-size: 24px;
-} */
-
 #mainGame button {
   width: 220px;
   height: 44px;
@@ -92,6 +90,7 @@ body {
   color: #fff;
 }
 .rules {
+  width: 30%;
   text-align: left;
   font-size: 16px;
   /* margin: 5% 0 0 25%; */
@@ -104,4 +103,68 @@ body {
   position: fixed;
   top: 40%;
   left: 7%;
+}
+
+@media (max-width: 1500px) {
+  #home .playNow h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 1410px) {
+  #gameContainer .selectNumber button {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1207px) {
+  #home .playNow h1 {
+    font-size: 3rem;
+  }
+  #gameContainer .selectNumber {
+    text-align: center;
+  }
+
+  #gameContainer .selectNumber button {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 996px) {
+  #home .playNow h1 {
+    font-size: 3rem;
+  }
+
+  #home .playNow button {
+    width: 100%;
+  }
+
+  .rules {
+    width: 90%;
+    text-align: left;
+    font-size: 16px;
+    position: static;
+    margin: 5% 0 0 15%;
+    top: 30%;
+    right: 5%;
+  }
+}
+
+@media (max-width: 750px) {
+  .chances {
+    width: 10%;
+    font-size: 1.2em;
+    /* left: 3%; */
+  }
+}
+
+@media (max-width: 500px) {
+  #home {
+    flex-direction: column;
+  }
+
+  #home .playNow {
+    text-align: center;
+  }
 }
