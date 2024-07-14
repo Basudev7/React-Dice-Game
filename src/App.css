@@ -1,0 +1,107 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Set body height to full viewport height */
+}
+
+#home {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Ensure it takes the full height of the body */
+  width: 100%; /* Ensure it takes the full width of the body */
+}
+
+#home .diceImg {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Add some space between the image and text */
+}
+
+#home .playNow {
+  text-align: right;
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  align-items: center; /* Center horizontally */
+}
+
+#home .playNow h1 {
+  font-weight: 650;
+  font-size: 96px;
+  margin: 0; /* Remove default margin */
+}
+
+#home .playNow button {
+  width: 220px;
+  height: 44px;
+  border-radius: 5px;
+  padding: 10px 18px; /* Correct padding syntax */
+  background-color: #000;
+  color: #fff;
+  margin-top: 20px; /* Adjust margin as needed */
+  cursor: pointer;
+  border: 1px solid;
+}
+
+#gameContainer {
+  display: flex;
+  gap: 50%;
+}
+
+#gameContainer .score {
+  text-align: center;
+}
+
+#gameContainer .selectNumber {
+  text-align: right;
+}
+
+#gameContainer .selectNumber button {
+  width: 72px;
+  height: 72px;
+  margin: 10px;
+  background: transparent;
+  border: 1px solid;
+  cursor: pointer;
+}
+#gameContainer .selectNumber p:first-child {
+  color: red;
+  font-size: 25px;
+  margin: 0;
+}
+
+#mainGame {
+  text-align: center;
+}
+
+/* #mainGame p {
+  font-size: 24px;
+} */
+
+#mainGame button {
+  width: 220px;
+  height: 44px;
+  border-radius: 5px;
+  border: 1px solid;
+  background: transparent;
+  margin: 20px 0 0px 0;
+}
+
+#mainGame button:hover {
+  background-color: #000;
+  color: #fff;
+}
+.rules {
+  text-align: left;
+  font-size: 16px;
+  /* margin: 5% 0 0 25%; */
+  position: fixed;
+  top: 30%;
+  right: 5%;
+}
+
+.chances {
+  position: fixed;
+  top: 40%;
+  left: 7%;
+}
