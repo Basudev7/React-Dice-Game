@@ -69,7 +69,7 @@ const GameRoles = ({ selectBtn, setSelectBtn }) => {
   return (
     <div id="mainGame">
       <h2 className="chances">Chances Left : {chances}</h2>
-      <img onClick={RollDice} src={dice} alt="Roll Dice" />
+      <img src={dice} onClick={RollDice} alt="Roll Dice" />
       <p>Click on Dice to roll</p>
       <button onClick={resetScore}>Reset Score</button> <br />
       <button onClick={showRules}>Show Rules</button>
