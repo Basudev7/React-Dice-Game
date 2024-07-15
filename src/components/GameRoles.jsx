@@ -37,7 +37,7 @@ const GameRoles = ({ selectBtn, setSelectBtn }) => {
     if (selectBtn === choice + 1) {
       setScore(score + selectBtn);
     } else {
-      setScore(score - selectBtn);
+      setScore(score - 2);
     }
 
     if (score === 20) {
@@ -51,6 +51,8 @@ const GameRoles = ({ selectBtn, setSelectBtn }) => {
     setChances(chances - 1);
     if (chances === 0) {
       alert("You have no more chances");
+      setChances(10);
+      setScore(0);
       return false;
     }
   };
